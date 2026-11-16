@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Notícia - Muriaé e Região</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Superior (Logo) -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="17" stroke="#22559C" stroke-width="2.5"/>
+                    <path d="M12 29L20 9L28 29M15 22H25" stroke="#22559C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 15C14 12 26 12 34 15" stroke="#22559C" stroke-width="1.5"/>
+                </svg>
+                <span class="logo-text">A NOTÍCIA</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Barra de Navegação Principal -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <ul class="nav-list">
+                <li class="nav-item home-link">
+                    <a href="#" aria-label="Início"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">QUEM SOMOS <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="historia.html">Nossa História</a></li>
+                        <li><a href="expediente.html">Equipe</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">MURIAÉ <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="esporte.html">Esporte</a></li>
+                        <li><a href="cultura.html">Cultura</a></li>
+                        <li><a href="cotidiano.html">Cotidiano</a></li>
+                        <li><a href="policia.html">Polícia</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="regiao.html">REGIÃO</a></li>
+                <li class="nav-item"><a href="opiniao.html">OPINIÃO</a></li>
+                <li class="nav-item"><a href="fale-conosco.html">FALE CONOSCO</a></li>
+                <li class="nav-item"><a href="#">JORNAL A NOTÍCIA</a></li>
+            </ul>
+
+            <div class="nav-search">
+                <button type="button" aria-label="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Seção Hero / Destaques Principais -->
+            <section class="hero-grid">
+                <article class="hero-card hero-main">
+                    <a href="#">
+                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=900&q=80" alt="Luz Maria Store">
+                        <div class="card-overlay">
+                            <h2>Luz Maria Store celebra um ano de sucesso e conquistas em Muriaé</h2>
+                        </div>
+                    </a>
+                </article>
+
+                <div class="hero-side">
+                    <article class="hero-card hero-sub">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Atuação Jovem">
+                            <div class="card-overlay">
+                                <h3>Atuação Jovem forma 37 jovens e apresenta projetos de inovação em Minas Gerais</h3>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="hero-card hero-sub">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="Campanha Energisa">
+                            <div class="card-overlay">
+                                <h3>Campanha de negociação da Energisa oferece descontos de até 98% e condições especiais</h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Divisor "ÚLTIMAS NOTÍCIAS" -->
+            <div class="section-divider">
+                <div class="line"></div>
+                <span class="badge-title">ÚLTIMAS NOTÍCIAS</span>
+                <div class="line"></div>
+            </div>
+
+            <!-- Área Principal: Feed de Notícias + Sidebar (TV A Notícia & Em Alta) -->
+            <section class="content-columns">
+                <!-- Coluna Esquerda: Feed de Notícias -->
+                <div class="news-feed">
+
+                    <!-- Post 1 -->
+                    <article class="post-card">
+                        <h2 class="post-title">
+                            <a href="#">Campanha de negociação da Energisa oferece descontos de até 98% e condições especiais</a>
+                        </h2>
+                        <p class="post-subtitle">
+                            Clientes têm de 16 de novembro a 31 de dezembro para negociar seus débitos, preferencialmente pelos canais digitais, com parcelamento em até 36 vezes sem juros.
+                        </p>
+                        <div class="post-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 16/11/2026</span>
+                        </div>
+                        <a href="#" class="post-image-link">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=850&q=80" alt="Campanha Energisa" class="post-image">
+                        </a>
+                        <p class="post-excerpt">
+                            O Grupo Energisa inicia mais uma edição da campanha nacional de negociação de débitos "Negocia Energisa", oferecendo condições especiais para clientes que desejam regularizar suas contas de energia. As oportunidades de negociação incluem descontos que podem chegar a 98% e parcelamento em até 36 vezes sem juros, conforme o perfil da dívida e os critérios da campanha. As condições são...
+                        </p>
+                        <div class="read-more-wrapper">
+                            <a href="#" class="read-more-link">Continue lendo <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="post-card">
+                        <h2 class="post-title">
+                            <a href="#">Curso de Medicina Veterinária da FAMINAS conquista nota máxima em avaliação do MEC</a>
+                        </h2>
+                        <p class="post-subtitle">
+                            Graduação foi iniciada em 2022 e recebeu conceito 5 após avaliação realizada entre os dias 4 e 6 de novembro
+                        </p>
+                        <div class="post-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 14/11/2026</span>
+                        </div>
+                        <a href="#" class="post-image-link">
+                            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=850&q=80" alt="Hospital Veterinário FAMINAS" class="post-image">
+                        </a>
+                        <p class="post-excerpt">
+                            O curso de Medicina Veterinária da FAMINAS Muriaé conquistou nota 5, conceito máximo atribuído na avaliação de cursos de graduação pelo Ministério da Educação (MEC). O resultado foi divulgado nesta sexta-feira (13/11), após o processo de avaliação institucional, realizado entre os dias 4 e 6 deste mês. Desde a implantação da graduação, em 2022, a...
+                        </p>
+                        <div class="read-more-wrapper">
+                            <a href="#" class="read-more-link">Continue lendo <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="post-card">
+                        <h2 class="post-title">
+                            <a href="#">Cresol participa da Semana Internacional do Café com atendimento e negócios para o produtor</a>
+                        </h2>
+                        <p class="post-subtitle">
+                            Até sexta-feira (13), a cooperativa atende cooperados e visitantes no Expominas, em Belo Horizonte (MG)
+                        </p>
+                        <div class="post-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 13/11/2026</span>
+                        </div>
+                        <a href="#" class="post-image-link">
+                            <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=850&q=80" alt="Cresol Semana Internacional do Café" class="post-image">
+                        </a>
+                        <p class="post-excerpt">
+                            A Cresol participa da Semana Internacional do Café (SIC 2026), que vai até sexta-feira (13) no Expominas, em Belo Horizonte (MG). A Cresol Minas Gerais divide o estande com as cooperativas Cresol Vale das Águas, Cresol Amazônia, Cresol Transformação e Cresol Nascente, no mesmo espaço de destaque que a Cresol ocupa na feira há alguns anos. O estande possui área...
+                        </p>
+                        <div class="read-more-wrapper">
+                            <a href="#" class="read-more-link">Continue lendo <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 4 -->
+                    <article class="post-card">
+                        <h2 class="post-title">
+                            <a href="#">Cresol lidera ranking nacional no Employer Branding Awards 2026</a>
+                        </h2>
+                        <p class="post-subtitle">
+                            Prêmio considera avaliações de colaboradores e ex-colaboradores; 94% dos avaliadores indicariam a empresa para amigos trabalharem
+                        </p>
+                        <div class="post-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 12/11/2026</span>
+                        </div>
+                        <a href="#" class="post-image-link">
+                            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=850&q=80" alt="Cresol Ranking Nacional" class="post-image">
+                        </a>
+                        <p class="post-excerpt">
+                            A Cresol, instituição financeira cooperativa com mais de 1,2 milhão de cooperados em todo o Brasil, conquistou o primeiro lugar no ranking geral do Employer Branding Awards 2026, divulgado quarta-feira, 11, pelas plataformas Indeed e Glassdoor. Fundada há 31 anos no interior do Paraná, a Cresol superou multinacionais de tecnologia, grandes grupos industriais e instituições financeiras para alcançar a liderança...
+                        </p>
+                        <div class="read-more-wrapper">
+                            <a href="#" class="read-more-link">Continue lendo <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 5 -->
+                    <article class="post-card">
+                        <h2 class="post-title">
+                            <a href="#">II Festival de Prêmios reúne comunidade em ação beneficente em prol da Obra Unida Lar Ozanam, em Muriaé</a>
+                        </h2>
+                        <div class="post-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 12/11/2026</span>
+                        </div>
+                        <a href="#" class="post-image-link">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=850&q=80" alt="II Festival de Prêmios Lar Ozanam" class="post-image">
+                        </a>
+                        <p class="post-excerpt">
+                            A solidariedade e a união marcaram a realização do II Festival de Prêmios em prol da Obra Unida Lar Ozanam, em Muriaé. O bingo beneficente foi realizado no dia 7 de novembro, no Centro de Formação e Ascensão Social (CEFAS), reunindo participantes em uma noite de confraternização, diversão e apoio a uma causa importante. A iniciativa teve como principal objetivo...
+                        </p>
+                        <div class="read-more-wrapper">
+                            <a href="#" class="read-more-link">Continue lendo <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Botão Veja Mais Notícias -->
+                    <a href="#" class="btn-load-more">VEJA MAIS NOTÍCIAS</a>
+                </div>
+
+                <!-- Coluna Direita: Sidebar -->
+                <aside class="sidebar">
+                    <!-- Widget TV A Notícia -->
+                    <div class="widget-card">
+                        <h3 class="widget-title">TV A Notícia</h3>
+                        <div class="tv-player-box">
+                            <div class="tv-placeholder">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>Assista às reportagens</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Widget EM ALTA (Sticky) -->
+                    <div class="widget-card sticky-widget">
+                        <div class="widget-badge-header">
+                            <div class="line"></div>
+                            <span class="badge-title">EM ALTA</span>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="trending-list">
+                            <article class="trending-item">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=150&q=80" alt="Lar Ozanam">
+                                    <h4>II Festival de Prêmios reúne comunidade em ação beneficente em prol da Obra Unida Lar Ozanam, em Muriaé</h4>
+                                </a>
+                            </article>
+
+                            <article class="trending-item">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=150&q=80" alt="Integração dos Bancários">
+                                    <h4>Integração dos Bancários reúne profissionais e familiares em dia de esporte e confraternização em Muriaé</h4>
+                                </a>
+                            </article>
+
+                            <article class="trending-item">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=150&q=80" alt="Reino Closet Store">
+                                    <h4>Reino Closet Store reinaugura espaço em Muriaé e apresenta novo conceito de moda masculina</h4>
+                                </a>
+                            </article>
+
+                            <article class="trending-item">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=150&q=80" alt="Cresol Ranking">
+                                    <h4>Cresol lidera ranking nacional no Employer Branding Awards 2026</h4>
+                                </a>
+                            </article>
+
+                            <div class="trending-text-only">
+                                <a href="#">Coluna Esplanada 10/11/26</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- Divisor "OUTROS DESTAQUES" -->
+            <div class="section-divider">
+                <div class="line"></div>
+                <span class="badge-title">OUTROS DESTAQUES</span>
+                <div class="line"></div>
+            </div>
+
+            <!-- Seção Outros Destaques (Grid 2 colunas) + Previsão do Tempo -->
+            <section class="other-highlights-section">
+                <div class="highlights-grid">
+                    <!-- Card Compacto 1 -->
+                    <article class="mini-card">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=200&q=80" alt="Cresol Formatura">
+                            <div class="mini-card-info">
+                                <span class="mini-date"><i class="fa-regular fa-calendar"></i> 12/11/2026</span>
+                                <h4>Cresol realiza formatura do Projeto Um Olhar para o Futuro em Monte Carmelo (MG)</h4>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Card Compacto 2 -->
+                    <article class="mini-card">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=200&q=80" alt="Operação Rastro">
+                            <div class="mini-card-info">
+                                <span class="mini-date"><i class="fa-regular fa-calendar"></i> 12/11/2026</span>
+                                <h4>Operação Rastro: dois homens são presos por roubo em Miraí</h4>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Card Compacto 3 -->
+                    <article class="mini-card">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=200&q=80" alt="Sicoob Credisudeste">
+                            <div class="mini-card-info">
+                                <span class="mini-date"><i class="fa-regular fa-calendar"></i> 11/11/2026</span>
+                                <h4>Sicoob Credisudeste inicia participação na Semana Internacional do Café em Belo Horizonte</h4>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Card Compacto 4 -->
+                    <article class="mini-card">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=200&q=80" alt="Sicredi">
+                            <div class="mini-card-info">
+                                <span class="mini-date"><i class="fa-regular fa-calendar"></i> 11/11/2026</span>
+                                <h4>Sicredi está presente na Semana Internacional do Café</h4>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Card Compacto 5 -->
+                    <article class="mini-card">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=200&q=80" alt="Natal Energisa">
+                            <div class="mini-card-info">
+                                <span class="mini-date"><i class="fa-regular fa-calendar"></i> 11/11/2026</span>
+                                <h4>Natal chegando: seus enfeites luminosos estão instalados com segurança? Sua ligação provisória já foi solicitada?</h4>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Card Compacto 6 -->
+                    <article class="mini-card">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=200&q=80" alt="Sicoob Credisudeste">
+                            <div class="mini-card-info">
+                                <span class="mini-date"><i class="fa-regular fa-calendar"></i> 11/11/2026</span>
+                                <h4>Sicoob Credisudeste estará presente em mais uma Semana Internacional do Café em Belo Horizonte</h4>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Card Compacto 7 -->
+                    <article class="mini-card">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=200&q=80" alt="Reino Closet Store">
+                            <div class="mini-card-info">
+                                <span class="mini-date"><i class="fa-regular fa-calendar"></i> 10/11/2026</span>
+                                <h4>Reino Closet Store reinaugura espaço em Muriaé e apresenta novo conceito de moda masculina</h4>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Card Compacto 8 -->
+                    <article class="mini-card">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=200&q=80" alt="Maquininha Cresol">
+                            <div class="mini-card-info">
+                                <span class="mini-date"><i class="fa-regular fa-calendar"></i> 10/11/2026</span>
+                                <h4>Maquininha da Cresol: nova solução em meios de pagamento chega para facilitar as vendas e a gestão dos negócios</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Widget Previsão do Tempo -->
+                <aside class="weather-sidebar">
+                    <div class="widget-card weather-wrapper">
+                        <div class="widget-badge-header">
+                            <div class="line"></div>
+                            <span class="badge-title">PREVISÃO DO TEMPO</span>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="weather-box">
+                            <div class="weather-header">
+                                <strong>Muriaé-MG</strong>
+                                <span>O TEMPO AGORA</span>
+                            </div>
+
+                            <div class="weather-current">
+                                <i class="fa-solid fa-cloud-rain"></i>
+                                <div class="temp-now">
+                                    <span class="deg">27°C</span>
+                                    <span class="desc">chuva moderada</span>
+                                </div>
+                            </div>
+
+                            <ul class="weather-forecast-list">
+                                <li>
+                                    <span class="day">Segunda-Feira</span>
+                                    <i class="fa-solid fa-cloud-rain"></i>
+                                    <span class="max">28°C</span>
+                                    <span class="min">21°C</span>
+                                </li>
+                                <li>
+                                    <span class="day">Terça-Feira</span>
+                                    <i class="fa-solid fa-cloud-rain"></i>
+                                    <span class="max">28°C</span>
+                                    <span class="min">20°C</span>
+                                </li>
+                                <li>
+                                    <span class="day">Quarta-Feira</span>
+                                    <i class="fa-solid fa-cloud-rain"></i>
+                                    <span class="max">30°C</span>
+                                    <span class="min">20°C</span>
+                                </li>
+                                <li>
+                                    <span class="day">Quinta-Feira</span>
+                                    <i class="fa-solid fa-cloud-rain"></i>
+                                    <span class="max">31°C</span>
+                                    <span class="min">22°C</span>
+                                </li>
+                                <li>
+                                    <span class="day">Sexta-Feira</span>
+                                    <i class="fa-solid fa-cloud-rain"></i>
+                                    <span class="max">32°C</span>
+                                    <span class="min">23°C</span>
+                                </li>
+                                <li>
+                                    <span class="day">Sábado</span>
+                                    <i class="fa-solid fa-cloud-rain"></i>
+                                    <span class="max">31°C</span>
+                                    <span class="min">23°C</span>
+                                </li>
+                                <li>
+                                    <span class="day">Domingo</span>
+                                    <i class="fa-solid fa-cloud-rain"></i>
+                                    <span class="max">31°C</span>
+                                    <span class="min">22°C</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- Bloco Redes Sociais (Instagram & Facebook) -->
+            <section class="social-feed-card">
+                <!-- Coluna Instagram -->
+                <div class="social-col-insta">
+                    <div class="social-btn-row">
+                        <a href="#" class="btn-social"><i class="fa-brands fa-instagram"></i> Siga nosso Instagram</a>
+                    </div>
+
+                    <div class="insta-profile-header">
+                        <div class="insta-avatar">
+                            <span class="years-20">20<small>ANOS</small></span>
+                            <span class="avatar-sub">A NOTÍCIA</span>
+                        </div>
+                        <div class="insta-bio">
+                            <strong>a.noticia</strong>
+                            <p>📰 Informação constrói caminhos.. 📞 32 98855-0315 📲 32 98802-3647 .</p>
+                        </div>
+                    </div>
+
+                    <div class="insta-grid">
+                        <a href="#" class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=300&q=80" alt="Post Instagram 1">
+                        </a>
+                        <a href="#" class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=300&q=80" alt="Post Instagram 2">
+                        </a>
+                        <a href="#" class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=300&q=80" alt="Post Instagram 3">
+                        </a>
+                        <a href="#" class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=300&q=80" alt="Post Instagram 4">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna Facebook -->
+                <div class="social-col-fb">
+                    <div class="social-btn-row">
+                        <a href="#" class="btn-social"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    </div>
+                    <div class="fb-embed-placeholder">
+                        <i class="fa-brands fa-facebook-square"></i>
+                        <span>Plugin Página do Facebook A Notícia</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Rodapé Institucional -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <a href="#" class="footer-logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="17" stroke="#FFFFFF" stroke-width="2.5"/>
+                    <path d="M12 29L20 9L28 29M15 22H25" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 15C14 12 26 12 34 15" stroke="#FFFFFF" stroke-width="1.5"/>
+                </svg>
+                <span class="logo-text">A NOTÍCIA</span>
+            </a>
+
+            <div class="footer-contact">
+                <p><i class="fa-solid fa-location-dot"></i> Rua Benedito Valadares, nº 317, Barra , Muriaé-MG</p>
+                <p><i class="fa-solid fa-phone"></i> (32) 98802-3647 · (32) 8855-0315</p>
+                <p><i class="fa-solid fa-envelope"></i> contato@anoticiaonline.com.br</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
